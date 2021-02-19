@@ -97,20 +97,19 @@ multiplos3 = len(multiplos3)
   '1'
 ]
 """
-
-
-
-
-
+regresivo = list(range(1,10))
+regresivo50 = list()
+for n in regresivo:
+  regresivo50 = [n] + regresivo50
+  print(regresivo50)
 
 """Invierta la siguiente lista usando el bucle for y guarde el resultado en 
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
 """
 lista2 = list(range(1, 70, 5))
-
-
-
-
+invertido = list()
+for n in range(len(lista2)):
+  invertido.append(lista2[len(lista2)-1-n])
 
 """Guardar en `primos` una lista con todos los números primos desde el 37 al 300
 Nota: Un número primo es un número entero que no se puede calcular multiplicando 

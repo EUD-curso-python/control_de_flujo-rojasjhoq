@@ -33,10 +33,10 @@ separados por coma, así:
 '134,268,...'
 
 # """
-# n=0
-# tabla100 =''
-# i = 1
-# multiplo = 134
+n=0
+tabla100 =''
+i = 1
+multiplo = 134
 
 # while i <= 10000:
 #     if i % multiplo == 0:
@@ -47,6 +47,7 @@ separados por coma, así:
 #       i +=1
 #     if n > 9:
 #       break
+# print(tabla100)
 
 # n=0
 # var1= []
@@ -74,9 +75,12 @@ está ordenada).
 """
 lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 132, 150, 180, 201, 203, 231, 250, 260, 267, 300, 304, 310, 312, 321, 326]
 
-
-
-
+multiplos3 =[]
+multiplo = 3
+for recorrido in lista1:
+  if recorrido % multiplo == 0 and recorrido<=300:
+    multiplos3.append(recorrido)
+multiplos3 = len(multiplos3)
 
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 

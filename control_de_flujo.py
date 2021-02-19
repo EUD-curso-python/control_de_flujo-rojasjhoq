@@ -32,40 +32,48 @@ separados por coma, así:
 
 '134,268,...'
 
-"""
-tabla100=[]
-i = 0
-multiplo = 134
+# """
+# n=0
+# tabla100 =''
+# i = 1
+# multiplo = 134
 
-while i <= 10000:
-    if i % multiplo == 0:
-      tabla100.append(i)
-      i +=1
-    else:
-      i +=1
-    if len(tabla100) > 9:
-      break
-str(tabla100)
+# while i <= 10000:
+#     if i % multiplo == 0:
+#       tabla100 = tabla100 + str(i) + ','
+#       n += 1
+#       i +=1
+#     else:
+#       i +=1
+#     if n > 9:
+#       break
 
+# n=0
+# var1= []
+# tabla100 =''
+# i = 1
+# multiplo = 134
 
+# while i <= 10000:
+#     if i % multiplo == 0:
+#       var1.append(i)
+#       i +=1
+#     else:
+#       i +=1
+#     if len(var1) > 9:
+#       break
 
+# for j in var1:
+#   tabla100 = tabla100 + str(j) + ','
 
-
-
-
-    
-
-
-
-tabla100
-
-
+# print(tabla100)
 
 """Guardar en `multiplos3` la cantidad de números que son múltiplos de 3 y 
 menores o iguales a 300 en la lista `lista1` que se define a continuación (la lista 
 está ordenada).
 """
 lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 132, 150, 180, 201, 203, 231, 250, 260, 267, 300, 304, 310, 312, 321, 326]
+
 
 
 

@@ -81,15 +81,12 @@ está ordenada).
 """
 lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 132, 150, 180, 201, 203, 231, 250, 260, 267, 300, 304, 310, 312, 321, 326]
 
-
-multiplos3=list()
-posicion1 = 0
+suma = 1
+multiplos3 = 0
 for i in lista1:
-  if posicion1%3 == 0 and posicion1 <=300:
-    multiplos3.append(i)
-  posicion1 +=1
-# print(multiplos3)
-
+  if i%3 == 0 and i < 300:
+    multiplos3 = suma + multiplos3
+print(multiplos3)
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 
 50 hasta el 1, así:
@@ -183,28 +180,15 @@ y guardar resultado en variable `suma_2s`
 
 n=1
 i=1
-serie = 2
+serie2 = '2'
 suma_2s= 0 
 
 while n <= 10:
   while i < n:
-    serie = serie + 2
+    serie2 = serie2 + '2'
     i+=1
-  suma_2s = suma_2s + serie
+  suma_2s = suma_2s + int(serie2)
   n+=1
-print(suma_2s)
-
-# rango = list(range(1,51))
-# prueba1 = ''
-# acumulado = list()
-# for n in (rango): 
-#   if len(acumulado) < 1:
-#     prueba1 = str(n)
-#     acumulado.append(prueba1)
-#   else:
-#    prueba1 = prueba1.strip() + ' ' + str(n)
-#    acumulado.append(prueba1)
-
 
 """Guardar en un string llamado `patron` el siguiente patrón llegando a una 
 cantidad máxima de asteriscos de 30. 

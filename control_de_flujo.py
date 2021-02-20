@@ -15,13 +15,13 @@ while n < 100:
 
 Hasta el número 50.
 """
-rango = list(range(1,6))
-prueba1 = ''
-acumulado = list()
-for n in (rango):
-   prueba1 = prueba1.strip() + ' ' + str(n)
-   acumulado.append(prueba1)
-print(acumulado)
+# rango = list(range(1,51))
+# prueba1 = ''
+# acumulado = list()
+# for n in (rango):
+#    prueba1 = prueba1.strip() + ' ' + str(n)
+#    acumulado.append(prueba1)
+# print(acumulado)
 
 """Guarde en `suma100` el entero de la suma de todos los números entre 1 y 100:
 """
@@ -31,9 +31,6 @@ n=0
 while n < 100:
   n+=1
   suma100 += n
-
-  
-
 
 """Guarde en `tabla100` un string con los primeros 10 múltiplos del número 134, 
 separados por coma, así:
@@ -83,7 +80,7 @@ está ordenada).
 """
 lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 132, 150, 180, 201, 203, 231, 250, 260, 267, 300, 304, 310, 312, 321, 326]
 
-multiplos3 =[]
+multiplos3 =list()
 multiplo = 3
 for recorrido in lista1:
   if recorrido % multiplo == 0 and recorrido<=300:
@@ -124,6 +121,7 @@ for n in range(len(lista2)):
 Nota: Un número primo es un número entero que no se puede calcular multiplicando 
 otros números enteros.
 """
+
 
 
 

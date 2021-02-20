@@ -86,7 +86,6 @@ multiplos3 = 0
 for i in lista1:
   if i%3 == 0 and i < 300:
     multiplos3 = suma + multiplos3
-print(multiplos3)
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 
 50 hasta el 1, así:
@@ -121,8 +120,19 @@ for n in range(len(lista2)):
 Nota: Un número primo es un número entero que no se puede calcular multiplicando 
 otros números enteros.
 """
+primos = list()
 
-
+for num in range(37,301):
+  if num > 1:
+    cont=0
+    i=2
+    while i<num and cont==0:
+      resto=num%i
+      if resto == 0:
+        cont+=1
+      i+=1
+    if cont ==0:
+      primos.append(num)
 
 
 

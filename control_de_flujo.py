@@ -7,7 +7,7 @@ naturales=[]
 while n < 100:
   n+=1
   naturales.append(n)
- 
+
 
 """Guarde en `acumulado` una lista con el siguiente patrón:
 
@@ -15,32 +15,12 @@ while n < 100:
 
 Hasta el número 50.
 """
-
-# n=0
-# var1= []
-# tabla100 =''
-# i = 1
-# multiplo = 134
-
-# while i <= 10000:
-#     if i % multiplo == 0:
-#       var1.append(i)
-#       i +=1
-#     else:
-#       i +=1
-#     if len(var1) > 9:
-#       break
-
-# for j in var1:
-#   tabla100 = tabla100 + str(j) + ','
-
-# print(tabla100)
-
-n=0
+rango = list(range(1,6))
+prueba1 = ''
 acumulado = list()
-while n < 50:
-  acumulado.append(acumulado + [n])
-  n+=1
+for n in (rango):
+   prueba1 = prueba1.strip() + ' ' + str(n)
+   acumulado.append(prueba1)
 print(acumulado)
 
 """Guarde en `suma100` el entero de la suma de todos los números entre 1 y 100:
@@ -51,6 +31,8 @@ n=0
 while n < 100:
   n+=1
   suma100 += n
+
+  
 
 
 """Guarde en `tabla100` un string con los primeros 10 múltiplos del número 134, 
@@ -128,11 +110,6 @@ regresivo = list(range(1,10))
 regresivo50 = list()
 for n in (regresivo):
    regresivo50 =[n] + regresivo50
-  
-    
-
-
-    
 
 """Invierta la siguiente lista usando el bucle for y guarde el resultado en 
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
@@ -141,8 +118,6 @@ lista2 = list(range(1, 70, 5))
 invertido = list()
 for n in range(len(lista2)):
   invertido.append(lista2[len(lista2)-1-n])
-
-
 
 
 """Guardar en `primos` una lista con todos los números primos desde el 37 al 300

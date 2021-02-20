@@ -8,7 +8,6 @@ while n < 100:
   n+=1
   naturales.append(n)
 
-
 """Guarde en `acumulado` una lista con el siguiente patrón:
 
 ['1','1 2','1 2 3','1 2 3 4','1 2 3 4 5',...,'...47 48 49 50']
@@ -82,12 +81,14 @@ está ordenada).
 """
 lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 132, 150, 180, 201, 203, 231, 250, 260, 267, 300, 304, 310, 312, 321, 326]
 
-multiplos3 =list()
-multiplo = 3
-for recorrido in lista1:
-  if recorrido % multiplo == 0 and recorrido<=300:
-    multiplos3.append(recorrido)
-multiplos3 = len(multiplos3)
+
+multiplos3=list()
+posicion1 = 0
+for i in lista1:
+  if posicion1%3 == 0 and posicion1 <=300:
+    multiplos3.append(i)
+  posicion1 +=1
+# print(multiplos3)
 
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 
@@ -161,10 +162,12 @@ presentes en posiciones pares, pero solo hasta la posición 80.
 
 lista3 = [941, 149, 672, 208, 99, 562, 749, 947, 251, 750, 889, 596, 836, 742, 512, 19, 674, 142, 272, 773, 859, 598, 898, 930, 119, 107, 798, 447, 348, 402, 33, 678, 460, 144, 168, 290, 929, 254, 233, 563, 48, 249, 890, 871, 484, 265, 831, 694, 366, 499, 271, 123, 870, 986, 449, 894, 347, 346, 519, 969, 242, 57, 985, 250, 490, 93, 999, 373, 355, 466, 416, 937, 214, 707, 834, 126, 698, 268, 217, 406, 334, 285, 429, 130, 393, 396, 936, 572, 688, 765, 404, 970, 159, 98, 545, 412, 629, 361, 70, 602]
 
-
-
-
-
+pares=list()
+posicion = 0
+for i in lista3:
+  if posicion%2 == 0 and posicion <=80:
+    pares.append(i)
+  posicion +=1
 
 """Guarde en lista `cubos` el cubo (potencia elevada a la 3) de los números del 
 1 al 100. 
@@ -178,8 +181,29 @@ lista3 = [941, 149, 672, 208, 99, 562, 749, 947, 251, 750, 889, 596, 836, 742, 5
 y guardar resultado en variable `suma_2s` 
 """
 
+n=1
+i=1
+serie = 2
+suma_2s= 0 
 
+while n <= 10:
+  while i < n:
+    serie = serie + 2
+    i+=1
+  suma_2s = suma_2s + serie
+  n+=1
+print(suma_2s)
 
+# rango = list(range(1,51))
+# prueba1 = ''
+# acumulado = list()
+# for n in (rango): 
+#   if len(acumulado) < 1:
+#     prueba1 = str(n)
+#     acumulado.append(prueba1)
+#   else:
+#    prueba1 = prueba1.strip() + ' ' + str(n)
+#    acumulado.append(prueba1)
 
 
 """Guardar en un string llamado `patron` el siguiente patrón llegando a una 

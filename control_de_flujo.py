@@ -57,7 +57,7 @@ separados por coma, así:
 
 # n=0
 # var1= []
-# tabla100 =''
+
 # i = 1
 # multiplo = 134
 
@@ -70,11 +70,13 @@ separados por coma, así:
 #     if len(var1) > 9:
 #       break
 
-# for j in var1:
-#   tabla100 = tabla100 + str(j) + ','
+# # tabla100 =  ','.join(var1)
 
-# print(tabla100)
+# print(var1)
 
+tabla100 =  ','.join([str(i * 134) for i in range(1, 11)])
+
+print(tabla100)
 """Guardar en `multiplos3` la cantidad de números que son múltiplos de 3 y 
 menores  300 en la lista `lista1` que se define a continuación (la lista 
 está ordenada).
@@ -101,11 +103,19 @@ for i in lista1:
   '1'
 ]
 """
-# regresivo = list(range(10,0,-1))
-regresivo = list(range(1,10))
-regresivo50 = list()
-for n in (regresivo):
-   regresivo50 =[n] + regresivo50
+regresivo50 = []
+i = 0
+while True:
+  if i == 0:
+    regresivo50.insert(i, str(1))
+  else:
+    regresivo50.insert(i, str(i + 1) + ' ' + regresivo50[i-1])
+  i += 1
+  
+  if i >= 50:
+    break;
+
+regresivo50.reverse()
 
 """Invierta la siguiente lista usando el bucle for y guarde el resultado en 
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
@@ -114,7 +124,6 @@ lista2 = list(range(1, 70, 5))
 invertido = list()
 for n in range(len(lista2)):
   invertido.append(lista2[len(lista2)-1-n])
-
 
 """Guardar en `primos` una lista con todos los números primos desde el 37 al 300
 Nota: Un número primo es un número entero que no se puede calcular multiplicando 
@@ -133,9 +142,6 @@ for num in range(37,301):
       i+=1
     if cont ==0:
       primos.append(num)
-
-
-
 
 """Guardar en `fibonacci` una lista con los primeros 60 términos de la serie de 
 Fibonacci.

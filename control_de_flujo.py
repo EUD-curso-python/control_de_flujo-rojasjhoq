@@ -15,17 +15,19 @@ while n < 100:
 
 Hasta el número 50.
 """
-# rango = list(range(1,51))
-# prueba1 = ''
-# acumulado = list()
-# for n in (rango):
-#    prueba1 = prueba1.strip() + ' ' + str(n)
-#    acumulado.append(prueba1)
-# print(acumulado)
+rango = list(range(1,51))
+prueba1 = ''
+acumulado = list()
+for n in (rango): 
+  if len(acumulado) < 1:
+    prueba1 = str(n)
+    acumulado.append(prueba1)
+  else:
+   prueba1 = prueba1.strip() + ' ' + str(n)
+   acumulado.append(prueba1)
 
 """Guarde en `suma100` el entero de la suma de todos los números entre 1 y 100:
 """
-
 suma100=0
 n=0
 while n < 100:
@@ -38,10 +40,10 @@ separados por coma, así:
 '134,268,...'
 
 # """
-n=0
-tabla100 =''
-i = 1
-multiplo = 134
+# n=0
+# tabla100 =''
+# i = 1
+# multiplo = 134
 
 # while i <= 10000:
 #     if i % multiplo == 0:

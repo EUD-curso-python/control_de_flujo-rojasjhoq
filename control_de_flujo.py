@@ -76,7 +76,6 @@ separados por coma, así:
 
 tabla100 =  ','.join([str(i * 134) for i in range(1, 11)])
 
-print(tabla100)
 """Guardar en `multiplos3` la cantidad de números que son múltiplos de 3 y 
 menores  300 en la lista `lista1` que se define a continuación (la lista 
 está ordenada).
@@ -165,9 +164,10 @@ Por ejemplo, el factorial de 5 se calcula así:
 5! = 5 × 4 × 3 × 2 × 1 = 120
 """
 
-
-
-
+factorial = list()
+for i in range(29,0,-1):
+  factorial.append(i)
+print(factorial)
 
 """Guarde en lista `pares` los elementos de la siguiente lista que esten 
 presentes en posiciones pares, pero solo hasta la posición 80.
@@ -186,9 +186,9 @@ for i in lista3:
 1 al 100. 
 """
 
-
-
-
+cubos = list()
+for i in range(1,101):
+  cubos.append(i ** 3)
 
 """Encuentre la suma de la serie 2 +22 + 222 + 2222 + .. hasta sumar 10 términos 
 y guardar resultado en variable `suma_2s` 
@@ -226,7 +226,12 @@ cantidad máxima de asteriscos de 30.
 **
 *
 """
-
+patron = ''
+for i in range(1,31):
+  patron += "*"*(i)+"\n"
+for i in range(29,0,-1):
+  patron += "*"*(i)+"\n"
+patron = patron.strip()
 
 
 

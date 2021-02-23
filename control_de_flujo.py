@@ -82,6 +82,7 @@ while True:
 
 regresivo50.reverse()
 
+
 """Invierta la siguiente lista usando el bucle for y guarde el resultado en 
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
 """
@@ -97,7 +98,6 @@ otros números enteros.
 primos = list()
 
 for num in range(37,301):
-  if num > 1:
     cont=0
     i=2
     while i<num and cont==0:
@@ -124,8 +124,6 @@ fibonacci = [0,1]
 for i in range(0,61):
   if len(fibonacci) <60:
     fibonacci.append(fibonacci[-2]+fibonacci[-1])
-print(fibonacci)
-
 
 
 """Guardar en `factorial` el factorial de 30

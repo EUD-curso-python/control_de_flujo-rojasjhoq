@@ -151,6 +151,7 @@ del segundo cada uno se calcula sumando los dos anteriores términos de la serie
 
 """
 
+fibonacci[0,1]
 
 
 
@@ -164,10 +165,9 @@ Por ejemplo, el factorial de 5 se calcula así:
 5! = 5 × 4 × 3 × 2 × 1 = 120
 """
 
-factorial = list()
-for i in range(29,0,-1):
-  factorial.append(i)
-print(factorial)
+factorial = 1
+for i in range(30,0,-1):
+    factorial = i * factorial
 
 """Guarde en lista `pares` los elementos de la siguiente lista que esten 
 presentes en posiciones pares, pero solo hasta la posición 80.

@@ -39,40 +39,6 @@ separados por coma, así:
 '134,268,...'
 
 # """
-# n=0
-# tabla100 =''
-# i = 1
-# multiplo = 134
-
-# while i <= 10000:
-#     if i % multiplo == 0:
-#       tabla100 = tabla100 + str(i) + ','
-#       n += 1
-#       i +=1
-#     else:
-#       i +=1
-#     if n > 9:
-#       break
-# print(tabla100)
-
-# n=0
-# var1= []
-
-# i = 1
-# multiplo = 134
-
-# while i <= 10000:
-#     if i % multiplo == 0:
-#       var1.append(i)
-#       i +=1
-#     else:
-#       i +=1
-#     if len(var1) > 9:
-#       break
-
-# # tabla100 =  ','.join(var1)
-
-# print(var1)
 
 tabla100 =  ','.join([str(i * 134) for i in range(1, 11)])
 
@@ -153,18 +119,13 @@ del segundo cada uno se calcula sumando los dos anteriores términos de la serie
  8, ...]
 
 """
+fibonacci = [0,1]
 
-fibonacci = list(0,1)
-for i in range(0,60):
-    fibonacci = (i-1) + (i-2)
-return fibonacci
+for i in range(0,61):
+  if len(fibonacci) <60:
+    fibonacci.append(fibonacci[-2]+fibonacci[-1])
+print(fibonacci)
 
-
-a, b = 0,1
-for i in range(0,60):
-    print(a, end=' ')
-    a, b = b, a + b
-print(a,b)
 
 
 """Guardar en `factorial` el factorial de 30

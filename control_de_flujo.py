@@ -147,13 +147,24 @@ Fibonacci.
 Nota: En la serie de Fibonacci, los 2 primeros términos son 0 y 1, y a partir 
 del segundo cada uno se calcula sumando los dos anteriores términos de la serie.
 
-[0, 1, 1, 2, 3, 5, 8, ...]
+[0, 1,
+ 1, 2,
+3, 5,
+ 8, ...]
 
 """
 
-fibonacci[0,1]
+fibonacci = list(0,1)
+for i in range(0,60):
+    fibonacci = (i-1) + (i-2)
+return fibonacci
 
 
+a, b = 0,1
+for i in range(0,60):
+    print(a, end=' ')
+    a, b = b, a + b
+print(a,b)
 
 
 """Guardar en `factorial` el factorial de 30

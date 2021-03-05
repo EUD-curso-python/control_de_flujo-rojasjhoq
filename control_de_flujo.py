@@ -24,6 +24,8 @@ for n in (rango):
   else:
    prueba1 = prueba1.strip() + ' ' + str(n)
    acumulado.append(prueba1)
+print(acumulado)
+
 
 """Guarde en `suma100` el entero de la suma de todos los números entre 1 y 100:
 """
